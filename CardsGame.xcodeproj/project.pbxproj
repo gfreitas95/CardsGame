@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC881FDF25117F650071F113 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC881FDE25117F650071F113 /* Cards.swift */; };
 		ECBC001C250153A70041BA73 /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC001B250153A70041BA73 /* EmojiCell.swift */; };
 		ECE9426A24F822120032C4D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9426924F822120032C4D7 /* AppDelegate.swift */; };
 		ECE9426C24F822120032C4D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9426B24F822120032C4D7 /* SceneDelegate.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC881FDE25117F650071F113 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		ECBC001B250153A70041BA73 /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
 		ECE9426624F822120032C4D7 /* CardsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE9426924F822120032C4D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC881FDD25117F340071F113 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EC881FDE25117F650071F113 /* Cards.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		ECBC001A250150DB0041BA73 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				ECE9427E24F823920032C4D7 /* Delegates */,
-				ECE9427D24F823890032C4D7 /* Controllers */,
+				EC881FDD25117F340071F113 /* Entities */,
 				ECBC001A250150DB0041BA73 /* Cells */,
+				ECE9427D24F823890032C4D7 /* Controllers */,
 				ECE9427224F822140032C4D7 /* Assets.xcassets */,
 				ECE9427724F822140032C4D7 /* Info.plist */,
 			);
@@ -157,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC881FDF25117F650071F113 /* Cards.swift in Sources */,
 				ECE9426E24F822120032C4D7 /* CardGameViewController.swift in Sources */,
 				ECE9426A24F822120032C4D7 /* AppDelegate.swift in Sources */,
 				ECBC001C250153A70041BA73 /* EmojiCell.swift in Sources */,

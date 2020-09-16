@@ -33,7 +33,7 @@ class CardGameViewController: UIViewController, UICollectionViewDelegateFlowLayo
     
     // MARK: - CardsImageDictionary
     
-    let cadsImage = [ CustomData(image: #imageLiteral(resourceName: "snorlax")), CustomData(image: #imageLiteral(resourceName: "raticate")), CustomData(image: #imageLiteral(resourceName: "gloom")), CustomData(image: #imageLiteral(resourceName: "slowbro")), CustomData(image: #imageLiteral(resourceName: "growlight")), CustomData(image: #imageLiteral(resourceName: "mewtwo"))]
+    let cardsImage = [ CustomData(image: #imageLiteral(resourceName: "snorlax")), CustomData(image: #imageLiteral(resourceName: "raticate")), CustomData(image: #imageLiteral(resourceName: "gloom")), CustomData(image: #imageLiteral(resourceName: "slowbro")), CustomData(image: #imageLiteral(resourceName: "growlight")), CustomData(image: #imageLiteral(resourceName: "mewtwo"))]
 
     // MARK: - UICollectionViewController
         
@@ -58,12 +58,16 @@ class CardGameViewController: UIViewController, UICollectionViewDelegateFlowLayo
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cadsImage.count
+        return cardsImage.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EmojiCell", for: indexPath) as! EmojiCell
-        cell.data = self.cadsImage[indexPath.row]
+        cell.data = self.cardsImage[indexPath.row]
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
     }
 }
